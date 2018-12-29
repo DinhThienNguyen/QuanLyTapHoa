@@ -23,3 +23,31 @@ C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI
 C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormXacNhan.resources
 C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyKhuyenMai.resources
 C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyKhachHang.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\bin\Debug\QuanLyTapHoa.exe.config
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\bin\Debug\QuanLyTapHoa.exe
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\bin\Debug\QuanLyTapHoa.pdb
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\bin\Debug\EntityFramework.dll
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\bin\Debug\EntityFramework.SqlServer.dll
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\bin\Debug\EntityFramework.xml
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\bin\Debug\EntityFramework.SqlServer.xml
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.csprojAssemblyReference.cache
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.FormMain.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.Properties.Resources.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormBaoCaoDoanhThuNgay.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormBaoCaoDoanhThuThang.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormDeleteKhachHang.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormFindRelatedProductsConfimation.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormLapHoaDon.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyHangHoa.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyKhachHang.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyKhuyenMai.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyNhapHang.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyUuDai.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormSaveKhachHang.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormXacNhanSoLuong.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormXacNhan.resources
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.csproj.GenerateResource.cache
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.csproj.CoreCompileInputs.cache
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.csproj.CopyComplete
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.exe
+E:\Privacy\PT phần hướng DT\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.pdb
