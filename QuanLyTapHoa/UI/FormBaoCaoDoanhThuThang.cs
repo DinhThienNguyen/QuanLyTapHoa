@@ -16,5 +16,6 @@ namespace QuanLyTapHoa.UI
         {
             InitializeComponent();
         }
+
     }
 }

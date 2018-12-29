@@ -21,13 +21,7 @@ namespace QuanLyTapHoa
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            //FormQuanLyKhachHang formQuanLyKhachHang = new FormQuanLyKhachHang();
-            //formQuanLyKhachHang.TopLevel = false;
-            //formQuanLyKhachHang.Dock = DockStyle.Fill;
-            //panelMain.Controls.Add(formQuanLyKhachHang);
-            //formQuanLyKhachHang.Show();
-
-            FormQuanLyHangHoa formQuanLyKhachHang = new FormQuanLyHangHoa();
+            FormQuanLyKhachHang formQuanLyKhachHang = new FormQuanLyKhachHang();
             formQuanLyKhachHang.TopLevel = false;
             formQuanLyKhachHang.Dock = DockStyle.Fill;
             panelMain.Controls.Add(formQuanLyKhachHang);
