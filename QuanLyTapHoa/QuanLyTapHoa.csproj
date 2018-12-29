@@ -104,6 +104,12 @@
     <Compile Include="UI\FormLapHoaDon.Designer.cs">
       <DependentUpon>FormLapHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FormQuanLyHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormQuanLyHangHoa.Designer.cs">
+      <DependentUpon>FormQuanLyHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormQuanLyKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormLapHoaDon.resx">
       <DependentUpon>FormLapHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormQuanLyHangHoa.resx">
+      <DependentUpon>FormQuanLyHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormQuanLyKhachHang.resx">
       <DependentUpon>FormQuanLyKhachHang.cs</DependentUpon>
