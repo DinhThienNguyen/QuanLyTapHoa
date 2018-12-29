@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E71EB0D6-581C-4993-A9FA-5A4BE75B617F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyTapHoa</RootNamespace>
+    <AssemblyName>QuanLyTapHoa</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\BaoCaoNhapHang.cs" />
+    <Compile Include="DAO\ChiTietBaoCaoNhapHang.cs" />
+    <Compile Include="DAO\ChiTietHoaDon.cs" />
+    <Compile Include="DAO\EntityManager.cs" />
+    <Compile Include="DAO\HangHoa.cs" />
+    <Compile Include="DAO\HoaDonBanHang.cs" />
+    <Compile Include="DAO\KhachHang.cs" />
+    <Compile Include="DAO\KhuyenMai.cs" />
+    <Compile Include="DAO\UuDai.cs" />
+    <Compile Include="DTO\BaoCaoNhapHangDTO.cs" />
+    <Compile Include="DTO\ChiTietBaoCaoNhapHangDTO.cs" />
+    <Compile Include="DTO\ChiTietHoaDonDTO.cs" />
+    <Compile Include="DTO\HangHoaDTO.cs" />
+    <Compile Include="DTO\HoaDonBanHangDTO.cs" />
+    <Compile Include="DTO\KhachHangDTO.cs" />
+    <Compile Include="DTO\KhuyenMaiDTO.cs" />
+    <Compile Include="DTO\UuDaiDTO.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SERVICES\BaoCaoNhapHangService.cs" />
+    <Compile Include="SERVICES\ChiTietBaoCaoNhapHangService.cs" />
+    <Compile Include="SERVICES\ChiTietHoaDonService.cs" />
+    <Compile Include="SERVICES\HangHoaService.cs" />
+    <Compile Include="SERVICES\HoaDonBanHangService.cs" />
+    <Compile Include="SERVICES\KhachHangService.cs" />
+    <Compile Include="SERVICES\KhuyenMaiService.cs" />
+    <Compile Include="SERVICES\UuDaiService.cs" />
+    <Compile Include="UI\FormDeleteKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormDeleteKhachHang.Designer.cs">
+      <DependentUpon>FormDeleteKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormFindRelatedProductsConfimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormFindRelatedProductsConfimation.Designer.cs">
+      <DependentUpon>FormFindRelatedProductsConfimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormLapHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormLapHoaDon.Designer.cs">
+      <DependentUpon>FormLapHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormQuanLyKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormQuanLyKhachHang.Designer.cs">
+      <DependentUpon>FormQuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormQuanLyKhuyenMai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormQuanLyKhuyenMai.Designer.cs">
+      <DependentUpon>FormQuanLyKhuyenMai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormQuanLyNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormQuanLyNhapHang.Designer.cs">
+      <DependentUpon>FormQuanLyNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormQuanLyUuDai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormQuanLyUuDai.Designer.cs">
+      <DependentUpon>FormQuanLyUuDai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormSaveKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormSaveKhachHang.Designer.cs">
+      <DependentUpon>FormSaveKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormXacNhanSoLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormXacNhanSoLuong.Designer.cs">
+      <DependentUpon>FormXacNhanSoLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormXacNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormXacNhan.Designer.cs">
+      <DependentUpon>FormXacNhan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\FormDeleteKhachHang.resx">
+      <DependentUpon>FormDeleteKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormFindRelatedProductsConfimation.resx">
+      <DependentUpon>FormFindRelatedProductsConfimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormLapHoaDon.resx">
+      <DependentUpon>FormLapHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormQuanLyKhachHang.resx">
+      <DependentUpon>FormQuanLyKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormQuanLyKhuyenMai.resx">
+      <DependentUpon>FormQuanLyKhuyenMai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormQuanLyNhapHang.resx">
+      <DependentUpon>FormQuanLyNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormQuanLyUuDai.resx">
+      <DependentUpon>FormQuanLyUuDai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormSaveKhachHang.resx">
+      <DependentUpon>FormSaveKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormXacNhanSoLuong.resx">
+      <DependentUpon>FormXacNhanSoLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormXacNhan.resx">
+      <DependentUpon>FormXacNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

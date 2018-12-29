@@ -1,0 +1,4 @@
+DataSource=.
+UserID=DESKTOP-622Q9S2\pupper
+Password=
+InitialCatalog=QuanLyTapHoa
