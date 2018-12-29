@@ -21,11 +21,11 @@ namespace QuanLyTapHoa
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            FormQuanLyKhuyenMai formQuanLyKhuyenMai = new FormQuanLyKhuyenMai();
-            formQuanLyKhuyenMai.TopLevel = false;
-            formQuanLyKhuyenMai.Dock = DockStyle.Fill;
-            panelMain.Controls.Add(formQuanLyKhuyenMai);
-            formQuanLyKhuyenMai.Show();
+            FormQuanLyKhachHang formQuanLyKhachHang = new FormQuanLyKhachHang();
+            formQuanLyKhachHang.TopLevel = false;
+            formQuanLyKhachHang.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(formQuanLyKhachHang);
+            formQuanLyKhachHang.Show();
         }
     }
 }

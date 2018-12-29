@@ -31,6 +31,7 @@ namespace QuanLyTapHoa.UI
             uuDaiService = new UuDaiService();
             selectedKhachHang = new KhachHangDTO();
             selectedUuDais = new List<UuDaiDTO>();
+            FindKhachHang();
         }
 
         private void FindKhachHang()
@@ -46,7 +47,7 @@ namespace QuanLyTapHoa.UI
                     MessageBox.Show("Vui lòng chỉ nhập số vào ô số lần mua hàng!", "Lỗi", MessageBoxButtons.OK);
                     return;
                 }
-            }            
+            }
             else
             {
                 SoLanMuaHang = int.MinValue;
@@ -61,6 +62,7 @@ namespace QuanLyTapHoa.UI
             UuDaiDTO uuDaiDTO = new UuDaiDTO();
             uuDaiDTO.SoLanMuaHangToiThieu = selectedKhachHang.SoLanMuaHang;
             selectedUuDais = uuDaiService.findUuDaiNotExpired(uuDaiDTO);
+            dataGridViewDanhSachKhuyenMai.DataSource = selectedUuDais;
         }
 
         private void ClearThongTinKhachHang()
@@ -124,11 +126,11 @@ namespace QuanLyTapHoa.UI
                     return;
                 }
                 khachHangDTO.SoLanMuaHang = SoLanMuaHang;
-                               
+
                 khachHangService.addKhachHang(khachHangDTO);
                 ClearThongTinKhachHang();
                 FindKhachHang();
-                
+
                 MessageBox.Show("Thêm khách hàng mới thành công!", "Thông báo", MessageBoxButtons.OK);
             }
         }
@@ -180,7 +182,7 @@ namespace QuanLyTapHoa.UI
                 }
                 selectedKhachHang.SoLanMuaHang = SoLanMuaHang;
 
-                khachHangService.updateKhachHang(selectedKhachHang);                
+                khachHangService.updateKhachHang(selectedKhachHang);
                 FindKhachHang();
                 FindUuDai();
 
@@ -194,7 +196,7 @@ namespace QuanLyTapHoa.UI
             if (formXacNhan.ShowDialog() == DialogResult.OK)
             {
                 khachHangService.deleteKhachHang(selectedKhachHang);
-                FindKhachHang();                
+                FindKhachHang();
                 ClearThongTinKhachHang();
                 FindUuDai();
                 MessageBox.Show("Xóa khách hàng thành công!", "Thông báo", MessageBoxButtons.OK);
@@ -203,7 +205,66 @@ namespace QuanLyTapHoa.UI
 
         private void buttonThemKhachHang_Click(object sender, EventArgs e)
         {
+            AddKhachHang();
+        }
 
+        private void buttonCapNhatKhachHang_Click(object sender, EventArgs e)
+        {
+            UpdateKhachHang();
+        }
+
+        private void buttonXoaKhachHang_Click(object sender, EventArgs e)
+        {
+            DeleteKhachHang();
+        }
+
+        private void buttonLamMoiThongTinKhachHang_Click(object sender, EventArgs e)
+        {
+            ClearThongTinKhachHang();
+        }
+
+        private void dataGridViewDanhSachKhachHang_DoubleClick(object sender, EventArgs e)
+        {
+            if (dataGridViewDanhSachKhachHang.CurrentRow.Index != -1)
+            {
+                selectedKhachHang = new KhachHangDTO(
+                    Convert.ToInt32(dataGridViewDanhSachKhachHang.CurrentRow.Cells["MaKhachHang"].Value),
+                    Convert.ToString(dataGridViewDanhSachKhachHang.CurrentRow.Cells["TenKhachHang"].Value),
+                    Convert.ToString(dataGridViewDanhSachKhachHang.CurrentRow.Cells["SoDienThoai"].Value),
+                    Convert.ToInt32(dataGridViewDanhSachKhachHang.CurrentRow.Cells["SoLanMuaHang"].Value)
+                    );
+                UpdateThongTinKhachHangTextBoxes();
+                FindUuDai();
+            }
+        }
+
+        private void textBoxTenKhachHang_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                FindKhachHang();
+            }
+        }
+
+        private void textBoxSoDienThoai_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                FindKhachHang();
+            }
+        }
+
+        private void textBoxSoLanMuaHang_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                FindKhachHang();
+            }
+        }
+
+        private void buttonTimKhachHang_Click(object sender, EventArgs e)
+        {
+            FindKhachHang();
         }
     }
 }
