@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using QuanLyTapHoa.DAO;
 using QuanLyTapHoa.SERVICES;
 using QuanLyTapHoa.DTO;
+using System.Globalization;
 
 namespace QuanLyTapHoa.UI
 {
@@ -28,7 +29,7 @@ namespace QuanLyTapHoa.UI
         }
 
         private void FormQuanLyKhuyenMai_Load(object sender, EventArgs e)
-        {
+        {             
             khuyenMaiService = new KhuyenMaiService();
             hangHoaService = new HangHoaService();
             selectedKhuyenMai = new KhuyenMaiDTO();
@@ -293,7 +294,7 @@ namespace QuanLyTapHoa.UI
             HangHoaDTO hangHoaDTO = new HangHoaDTO();
             hangHoaDTO.MaHangHoa = selectedKhuyenMai.MaHangHoa;
             selectHangHoaDTOs = hangHoaService.findHangById(hangHoaDTO);
-            
+
         }
 
         private void FindProducts()
@@ -422,7 +423,7 @@ namespace QuanLyTapHoa.UI
                    Convert.ToString(dataGridViewHangHoa.CurrentRow.Cells["DonViTinh"].Value)
                     );
                 selectHangHoaDTOs.Add(hangHoaDTO);
-                dataGridViewSelectedHangHoa.DataSource = selectHangHoaDTOs;                
+                dataGridViewSelectedHangHoa.DataSource = selectHangHoaDTOs;
             }
         }
 

@@ -24,8 +24,12 @@ namespace QuanLyTapHoa.DTO
             tenHangHoa = "";
             loaiHangHoa = "";
             khuyenMaiDTO = new KhuyenMaiDTO();
+            soLuong = 0;
+            giaBanLe = 0;
+            donViTinh = "";
             tongGiaTri = 0;
             soLuongBan = 0;
+            ngayHetHan = DateTime.Now;
         }
 
         public HangHoaDTO(int maHangHoa, string tenHangHoa, string loaiHangHoa, DateTime ngayHetHan, int soLuong, decimal giaBanLe, string donViTinh)

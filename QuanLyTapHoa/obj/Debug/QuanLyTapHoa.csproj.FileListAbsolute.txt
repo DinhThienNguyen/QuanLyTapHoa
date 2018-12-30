@@ -23,3 +23,4 @@ C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI
 C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormXacNhan.resources
 C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyKhuyenMai.resources
 C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyKhachHang.resources
+C:\Users\pupper\source\repos\QuanLyTapHoa\QuanLyTapHoa\obj\Debug\QuanLyTapHoa.UI.FormQuanLyHangHoa.resources

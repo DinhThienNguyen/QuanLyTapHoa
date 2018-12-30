@@ -38,7 +38,7 @@ namespace QuanLyTapHoa.SERVICES
             {
                 try
                 {
-                    long now = DateTimeOffset.Now.ToUnixTimeSeconds();
+                    long now = ((DateTimeOffset)hangHoaDTO.NgayHetHan).ToUnixTimeSeconds();
                     List<HangHoa> hangHoas = context.HangHoa
                         .Where(hang => hang.TenHangHoa.Contains(hangHoaDTO.TenHangHoa))
                         .Where(hang => hang.LoaiHangHoa.Contains(hangHoaDTO.LoaiHangHoa))
@@ -68,7 +68,9 @@ namespace QuanLyTapHoa.SERVICES
                 {
                     long now = DateTimeOffset.Now.ToUnixTimeSeconds();
                     List<HangHoa> hangHoas = context.HangHoa
-                        .Where(hang => hang.TenHangHoa.Contains(hangHoaDTO.TenHangHoa))                                                
+                        .Where(hang => hang.TenHangHoa.Contains(hangHoaDTO.TenHangHoa))
+                        .Where(hang => hang.LoaiHangHoa.Contains(hangHoaDTO.LoaiHangHoa))
+                        .Where(hang => hang.SoLuong > 0)
                         .ToList<HangHoa>();
                     foreach (HangHoa temp in hangHoas)
                     {

@@ -76,6 +76,7 @@ namespace QuanLyTapHoa.UI
         {
             HangHoaDTO hangHoaDTO = new HangHoaDTO();
             hangHoaDTO.TenHangHoa = textBoxTenHangHoa.Text == string.Empty ? string.Empty : textBoxTenHangHoa.Text;
+            hangHoaDTO.NgayHetHan = DateTime.Now;
             List<HangHoaDTO> hangHoaDTOs = hangHoaService.findHangHoaNotExpired(hangHoaDTO);
             if (hangHoaDTOs.Count != 0)
             {
